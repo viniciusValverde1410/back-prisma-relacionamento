@@ -54,6 +54,3 @@ CREATE UNIQUE INDEX "collections_name_key" ON "collections"("name");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "cards_name_key" ON "cards"("name");
-
--- CreateIndex
-CREATE UNIQUE INDEX "cards_collectionId_key" ON "cards"("collectionId");

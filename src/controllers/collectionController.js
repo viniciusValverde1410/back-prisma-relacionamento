@@ -50,7 +50,7 @@ class CollectionController {
       }
 
       // Criar a nova coleção
-      const newCollection = await CollectionModel.create(
+      const newColecao = await CollectionModel.create(
         name,
         description,
         releaseYear,
@@ -62,10 +62,10 @@ class CollectionController {
 
       res.status(201).json({
         message: "Coleção criada com sucesso",
-        newCollection});
+        newColecao});
 
     } catch (error) {
-      console.error("Erro ao criar coleçãp:", error);
+      console.error("Erro ao criar coleção:", error);
       res.status(500).json({ error: "Erro ao criar coleção" });
     }
   }
@@ -81,7 +81,7 @@ class CollectionController {
         releaseYear,
       } = req.body;
 
-      // Atualizar o personagem
+      // Atualizar a coleção
       const updatedCollection = await CollectionModel.update(
         id,
         name,

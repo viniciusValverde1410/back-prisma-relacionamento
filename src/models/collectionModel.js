@@ -6,7 +6,9 @@ class CollectionModel {
     const colecoes = await prisma.collection.findMany({
       orderBy: {
         createdAt: "desc",
-      },
+      }, include: {
+        cards: true,
+      }
     });
 
     console.log(colecoes);
