@@ -1,5 +1,5 @@
 import UserModel from "../models/userModel.js";
-import bcrypt from "bcrypt.js";
+import bcrypt from "bcryptjs";
 
 class AuthController {
     // Listar todos os usuários
