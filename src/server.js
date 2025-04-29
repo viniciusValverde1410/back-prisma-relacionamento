@@ -22,8 +22,8 @@ app.use("/cartas", cardRouter); // Usar as rotas de cartas
 app.use("/auth", authRouter); // Usar as rotas de autenticação
 
 // Rota base para verificar se o servidor está rodando
-app.get("/", (req, res) => {
-  res.json({ message: "API de Coleção de Animes funcionando!" });
+app.get("/teste", (req, res) => {
+  res.json({ message: "Servidor funcionando!" });
 });
 
 // Iniciar o servidor
